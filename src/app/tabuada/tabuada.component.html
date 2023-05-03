@@ -1,0 +1,12 @@
+<input type="number" [(ngModel)]="n" />
+
+<table border="1">
+  <tr>
+    <th>Número</th>
+    <th>Resultado</th>
+  </tr>
+  <tr *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+    <td>{{ n }} x {{ i }}</td>
+    <td>{{ n * i }}</td>
+  </tr>
+</table>
